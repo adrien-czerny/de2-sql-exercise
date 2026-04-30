@@ -20,7 +20,21 @@ Run some SQL to give the important insights to the Business:
 
 > How inclusive are Star Wars movies? Show movie title and release years.
 
-## Instructions
+This is a vague ask on purpose; the business likes to keep things fuzzy. Feel
+free to ask for clarifications and we'll provide guidance. We are more
+interested in your workings than to get to a "final" result.
+
+To get you started, here are a few leads:
+* Poke at the data! In particular, `swapi_people`, `swapi_films` & `swapi_species`
+* Can you see anything that jumps out as relevant to the concept of inclusivity?
+* Think about the grain of the data; in your ideal resulting dataset, what would be a "unique" key?
+
+Even if it's not necessary to fulfil the ask, we may ask you to go over:
+* Handling of discrepancies
+* Joining of tables
+* Organising SQL as CTEs
+
+## Setup
 
 A DuckDB database file is provided to you in this repo. To install DuckDB you
 can follow along at:
