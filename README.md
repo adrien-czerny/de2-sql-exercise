@@ -22,8 +22,10 @@ Run some SQL to give the important insights to the Business:
 
 ## Instructions
 
-A DuckDB database file is provided to you in this repo. You can run the local
-DuckDB UI and connect to the database file in a terminal:
+A DuckDB database file is provided to you in this repo. To install DuckDB you
+can follow along at:
+https://duckdb.org/install/?platform=linux&environment=cli. You can then run
+the local DuckDB UI and connect to the database file in a terminal:
 
 ```
 $ duckdb -ui ./wh.db
