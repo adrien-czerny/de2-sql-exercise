@@ -17,9 +17,8 @@ are on holiday.
 ## Setup
 
 A DuckDB database file is provided to you in this repo. To install DuckDB you
-can follow along at:
-https://duckdb.org/install/?platform=linux&environment=cli. You can then run
-the local DuckDB UI and connect to the database file in a terminal:
+can follow along at: https://duckdb.org/install/. You can then run the local
+DuckDB UI and connect to the database file in a terminal:
 
 ```
 $ duckdb -ui ./wh.db
