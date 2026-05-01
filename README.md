@@ -14,26 +14,6 @@ The business has ingested a lot of Star Wars data in its Data Warehouse as a
 DuckDB database. It now has great needs for insights, and all the BI Analysts
 are on holiday.
 
-## Ask
-
-Run some SQL to give the important insights to the Business:
-
-> How inclusive are Star Wars movies? Show movie title and release years.
-
-This is a vague ask on purpose; the business likes to keep things fuzzy. Feel
-free to ask for clarifications and we'll provide guidance. We are more
-interested in your workings than to get to a "final" result.
-
-To get you started, here are a few leads:
-* Poke at the data! In particular, `swapi_people`, `swapi_films` & `swapi_species`
-* Can you see anything that jumps out as relevant to the concept of inclusivity?
-* Think about the grain of the data; in your ideal resulting dataset, what would be a "unique" key?
-
-Even if it's not necessary to fulfil the ask, we may ask you to go over:
-* Handling of discrepancies
-* Joining of tables
-* Organising SQL as CTEs
-
 ## Setup
 
 A DuckDB database file is provided to you in this repo. To install DuckDB you
@@ -45,8 +25,21 @@ the local DuckDB UI and connect to the database file in a terminal:
 $ duckdb -ui ./wh.db
 ```
 
-Alternatively, with docker:
+**Not supported specifically on Windows machines with an ARM64 architecture**.
+
+Alternatively, try with docker:
 
 ```
 $ docker run --rm -it -v "$(pwd):/workspace" -w /workspace --net host duckdb/duckdb duckdb -ui wh.db
 ```
+
+## Ask
+
+Answer one or more from the following questions:
+* Show each character name along with the vehicle name this character is driving the most (Easy)
+* Show a count of each gender that each movie includes; show the movie name, order by release date (Med)
+* Show the most prolific pair of characters i.e. order each pair of character depending on how often they appear together in a movie (Hard)
+
+Hints:
+* Keep an eye out for discrepancies and missing values!
+* Think of organising your SQL in CTEs
