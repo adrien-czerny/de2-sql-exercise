@@ -24,6 +24,8 @@ DuckDB UI and connect to the database file in a terminal:
 $ duckdb -ui ./wh.db
 ```
 
+Navigate in your web browser to: http://localhost:4213/.
+
 **Not supported specifically on Windows machines with an ARM64 architecture**.
 
 Alternatively, try with docker:
