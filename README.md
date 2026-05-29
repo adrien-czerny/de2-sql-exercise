@@ -37,7 +37,7 @@ $ docker run --rm -it -v "$(pwd):/workspace" -w /workspace --net host duckdb/duc
 ## Ask
 
 Answer one or more from the following questions:
-* Show each character name along with the vehicle name this character is driving the most (Easy)
+* Show each character name along with each vehicle name this character drives (Easy)
 * Show a count of each gender that each movie includes; show the movie name, order by release date (Med)
 * Show the most prolific pair of characters i.e. show pairs of character names and count how many times they appear together accross movies (Hard)
 
